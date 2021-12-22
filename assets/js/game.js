@@ -1,3 +1,9 @@
+// Game States
+// "WIN" - Player robot has defeated all enemy-robots
+//  * Fight all enemy-robots
+//  * Defeat each enemy-robot
+// "LOSE" - Player robot's health is zero or less
+
 //var playerName = 'Metal Man';
 var playerName = window.prompt("What is your robot's name?");
 var playerHealth = 100;
@@ -6,7 +12,6 @@ var playerMoney = 10;
 
 // You can also log multiple values at once like this
 console.log(playerName, playerAttack, playerHealth);
-
 var enemyName = "Roborto";
 var enemyHealth = 50;
 var enemyAttack = 12;
@@ -72,7 +77,7 @@ var fight = function() {
     };  
 
     // run the fight function to start game
-    fight();
+    // fight();
 
 
     
