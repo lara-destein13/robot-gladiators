@@ -11,19 +11,18 @@ var playerAttack = 10;
 var playerMoney = 10;
 
 // You can also log multiple values at once like this
-console.log(playerName, playerAttack, playerHealth);
-var enemyName = "Roborto";
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 var enemyHealth = 50;
 var enemyAttack = 12;
 
 
 // This is a function (our fight function) expression: This is when we create a function by assigning it to a variable.
 // The following code shows an example. First we create the function, then we execture a function.
-var fight = function() {
+var fight = function(enemyName) {
     // Alert players that they are starting the round
     window.alert("Welcome to Robot Gladiators!");
 
-    // ask player if they would like to fight or fun
+    // ask player if they would like to fight or run
     var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
 
     // if player chooses to fight, then fight
@@ -77,7 +76,9 @@ var fight = function() {
     };  
 
     // run the fight function to start game
-    // fight();
+    for(var i = 0; i < enemyNames.length; i++) {
+        fight(enemyNames[i]);
+    }
 
 
     
